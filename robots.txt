@@ -1,0 +1,43 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /images/
+Allow: /gallery/
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Block specific bots
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Clean Parameters
+Allow: /*?page=
+Allow: /*?id=
+Allow: /*?lang=
+Disallow: /*?*
+
+# Host
+Host: https://mouthwashing.pro
+
+# Sitemap
+Sitemap: https://mouthwashing.pro/sitemap.xml 
